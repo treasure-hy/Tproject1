@@ -28,32 +28,42 @@
     <title>Tindog</title>
   </head>
   <body>
-    <div class="bg-rose-500 h-max pl-20 pr-15 p-10">
-      <nav class="flex justify-between pt-2 px-6">
-        <h1 class="text-white text-4xl font-bold">tindog</h1>
-        <ul class="flex gap-10 justify-center item-center cursor-pointer m-3">
-          <li class="text-white hover:text-gray-400 text-lg">Contact</li>
-          <li class="text-white hover:text-gray-400 text-lg">Pricing</li>
-          <li class="text-white hover:text-gray-400 text-lg">Download</li>
+    <div class="bg-rose-500 h-max p-4 md:pl-20 md:pr-15 md:p-10">
+      <nav class="flex gap-4 justify-start md:justify-between md:pt-2 md:px-6">
+        <h1 class="text-white text-2xl md:text-4xl font-bold">tindog</h1>
+        <ul
+          class="flex gap-3 md:gap-10 justify-center item-center cursor-pointer m-3"
+        >
+          <li class="text-white hover:text-gray-400 text-base md:text-lg">
+            Contact
+          </li>
+          <li class="text-white hover:text-gray-400 text-base md:text-lg">
+            Pricing
+          </li>
+          <li class="text-white hover:text-gray-400 text-base md:text-lg">
+            Download
+          </li>
         </ul>
       </nav>
-      <div class="flex gap-12">
+      <div class="flex flex-col md:flex-row gap-12">
         <div class="px-6 py-12 flex flex-col">
-          <h2 class="text-white text-6xl font-extrabold">
+          <h2
+            class="text-white text-4xl font-bold md:text-6xl md:font-extrabold"
+          >
             Tinder but for <br />
             dogs.
           </h2>
-          <p class="text-white text-3xl mt-4">
+          <p class="text-white text-2xl md:text-3xl mt-4">
             Meet new and interesting <br />dogs nearby
           </p>
           <div class="flex mt-5 gap-8">
             <button
-              class="bg-black text-white p-3 border-2 w-40 rounded-md cursor-pointer"
+              class="bg-black text-white py-1 px-2 text-sm md:p-3 md:text-base border-2 md:w-40 rounded-md cursor-pointer"
             >
               <a href="#"><i class="fa-brands fa-google-play"></i> Download </a>
             </button>
             <button
-              class="bg-rose hover:bg-white text-white p-3 border-2 w-40 rounded-md cursor-pointer hover:text-black font-medium"
+              class="bg-rose hover:bg-white text-white py-1 px-2 text-sm md:p-3 md:text-base border-2 md:w-40 rounded-md cursor-pointer hover:text-black font-medium"
             >
               <a href="#"><i class="fa-brands fa-apple"></i> Download</a>
             </button>
@@ -63,22 +73,22 @@
         <img
           src="./image/iphone6.png"
           alt=""
-          class="transform rotate-45 h-[400px] ml-60"
+          class="h-[400px] w-[180px] ml-10 md:transform md:rotate-45 md:h-[400px] md:ml-60"
           lazy_loading
         />
       </div>
     </div>
     <!-- What people say sections -->
     <section class="bg-white p-10">
-      <div class="flex justify-center gap-20">
+      <div class="flex flex-col md:justify-center md:gap-20">
         <div class="flex flex-col items-center">
           <a href="#"
             ><i
-              class="fa-solid fa-circle-check text-rose-400 text-5xl flex mt-7"
+              class="fa-solid fa-circle-check text-rose-400 text-3xl md:text-5xl flex mt-4 md:mt-7"
             ></i
           ></a>
-          <h3 class="text-4xl font-bold mt-5">Easy to use</h3>
-          <p class="text-lg text-gray-400 mt-5">
+          <h3 class="text-2xl md:text-4xl font-bold mt-5">Easy to use</h3>
+          <p class="md:text-lg text-gray-400 mt-5">
             So easy to use,even your <br />
             dog could use it
           </p>
@@ -86,10 +96,10 @@
         <div class="flex flex-col items-center">
           <a href="#"
             ><i
-              class="fa-solid fa-bullseye text-rose-400 text-5xl flex mt-7"
+              class="fa-solid fa-bullseye text-rose-400 text-3xl md:text-5xl flex mt-4 md:mt-7"
             ></i
           ></a>
-          <h3 class="text-4xl font-bold mt-5">Elite Clientele</h3>
+          <h3 class="text-2xl md:text-4xl font-bold mt-5">Elite Clientele</h3>
           <p class="text-lg text-gray-400 mt-5">
             We have all the dogs,the <br />
             greatest dogs
@@ -97,9 +107,13 @@
         </div>
         <div class="flex flex-col items-center">
           <a href="#"
-            ><i class="fa-solid fa-heart text-rose-400 text-5xl flex mt-7"></i>
+            ><i
+              class="fa-solid fa-heart text-rose-400 text-3xl md:text-5xl flex mt-4 md:mt-7"
+            ></i>
           </a>
-          <h3 class="text-4xl font-bold mt-5">Guaranteed to <br />work</h3>
+          <h3 class="text-2xl md:text-4xl font-bold mt-5">
+            Guaranteed to <br />work
+          </h3>
           <p class="text-lg text-gray-400 mt-5">
             Find the love of your dog's <br />
             life or your money back
@@ -109,14 +123,16 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="bg-rose-500 text-white p-15 flex justify-center h-max">
+    <section
+      class="bg-rose-500 text-white pl-10 md:p-15 flex justify-center h-max"
+    >
       <div id="default-carousel" class="overflow-hidden relative w-full h-64">
         <div class="flex w-[400%] animate-slide">
           <div class="w-1/4 flex-shrink-0">
             <div
               class="flex flex-col gap-4 justify-center items-center w-full h-64"
             >
-              <p class="text-lg mt-4">
+              <p class="text-xsm md:text-lg md:mt-4">
                 Now my dog no longer have to sniff other dogs for love. he found
                 the hottest Corgi on TinDog UwU
               </p>
@@ -131,7 +147,7 @@
           </div>
           <div class="w-1/4 flex-shrink-0">
             <div class="flex flex-col justify-center items-center w-full h-64">
-              <p class="text-lg mt-4">
+              <p class="text-xsm md:text-lg mt-4">
                 My dog used to be so lonely, but with TinDog's help, they've
                 found the love of their life. I think.
               </p>
@@ -145,7 +161,7 @@
           </div>
           <div class="w-1/4 flex-shrink-0">
             <div class="flex flex-col justify-center items-center w-full h-64">
-              <p class="text-lg mt-4">
+              <p class="text-xsm md:text-lg mt-4">
                 Through TinDog my dog found her life partner. I'm so happy for
                 her. Thank You TinDog
               </p>
@@ -167,35 +183,37 @@
         Our Global Partners
       </h3>
 
-      <div class="flex flex-row items-start justify-evenly gap-20">
+      <div class="flex flex-wrap items-start justify-evenly gap-2 md:gap-20">
         <img
           src="https://tindog-suman.pages.dev/NASA-Logo.wine.b7ab2ae8.png"
           alt=""
-          class="w-[150px] h-[150px] rounded-full"
+          class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-full"
         />
         <img
           src="https://tindog-suman.pages.dev/SpaceX-Logo.wine.bbed8362.png"
           alt=""
-          class="w-[150px] h-[150px] rounded-full"
+          class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-full"
         />
         <img
           src="https://tindog-suman.pages.dev/Indian_Oil_Corporation-Logo.wine.1be8c9af.png"
           alt=""
-          class="w-[150px] h-[150px] rounded-full"
+          class="w-[80px] h-[80px] md:w-[150px] md:h-[150px] rounded-full"
         />
         <img
           src="https://tindog-suman.pages.dev/UEFA_Champions_League-Logo.wine.b4f23c89.png"
           alt=""
-          class="w-[150px] h-[150px] rounded-full"
+          class="w-[80px] h-[80px] w-[150px] h-[150px] rounded-full"
         />
         <img
           src="https://tindog-suman.pages.dev/KFC-Logo.wine.6e3ff496.png"
           alt=""
-          class="w-[150px] h-[150px] rounded-full"
+          class="w-[80px] h-[80px] w-[150px] h-[150px] rounded-full"
         />
       </div>
-      <div class="p-20">
-        <h3 class="flex items-center justify-center font-medium text-4xl">
+      <div class="p-6 md:p-20 text-center">
+        <h3
+          class="md:flex md:items-center md:justify-center md:font-medium text-xl md:text-4xl"
+        >
           A Plan for Every Dog's Needs
         </h3>
         <p class="flex items-center justify-center text-gray-400 text-lg p-5">
@@ -205,7 +223,9 @@
       <div
         class="flex flex-col md:flex-row justify-center items-center gap-6 p-8 bg-white"
       >
-        <div class="bg-white border rounded-xl shadow-sm p-6 w-80 text-center">
+        <div
+          class="bg-white border rounded-xl shadow-sm p-6 w-40 md:w-80 text-center"
+        >
           <h2 class="text-2xl font-bold mb-2">নেরি কুত্তা</h2>
           <p class="text-pink-500 text-3xl font-extrabold mb-2">Free</p>
           <p class="text-gray-600 mb-4">বিনামূল্যে নেরি কুত্তাই পাবি ভাই</p>
@@ -221,7 +241,9 @@
           </button>
         </div>
 
-        <div class="bg-white border rounded-xl shadow-sm p-6 w-80 text-center">
+        <div
+          class="bg-white border rounded-xl shadow-sm p-6 w-40 md:w-80 text-center"
+        >
           <h2 class="text-2xl font-bold mb-2">Labrador</h2>
           <p class="text-3xl font-extrabold mb-2">
             ₹ 49 <span class="text-base font-medium">/ mo</span>
@@ -239,7 +261,9 @@
           </button>
         </div>
 
-        <div class="bg-white border rounded-xl shadow-sm p-6 w-80 text-center">
+        <div
+          class="bg-white border rounded-xl shadow-sm p-6 w-40 md:w-80 text-center"
+        >
           <h2 class="text-2xl font-bold mb-2">Mastiff</h2>
           <p class="text-3xl font-extrabold mb-2">
             ₹ 99 <span class="text-base font-medium">/ mo</span>
@@ -259,30 +283,36 @@
         </div>
       </div>
     </section>
-    <section class="bg-rose-500 flex flex-col items-center p-20 mt-7">
-      <h2 class="text-4xl text-white font-bold Montserrat">
+    <section
+      class="bg-rose-500 flex flex-col md:items-center p-10 md:p-20 mt-7"
+    >
+      <h2
+        class="text-2xl font-medium md:text-4xl text-white md:font-bold Montserrat"
+      >
         Find the True Love of Your Dog's Life Today.
       </h2>
-      <div class="flex flex-row gap-10 mt-7">
+      <div class="flex flex-wrap gap-5 md:flex-row md:gap-10 mt-7">
         <button
-          class="bg-black text-white w-40 p-3 border-2 rounded-md cursor-pointer"
+          class="bg-black text-white px-2 py-1 w-25 md:p-3 md:w-40 md:text-base border-2 rounded-md cursor-pointer"
         >
           <a href="#"><i class="fa-brands fa-google-play"></i> Download </a>
         </button>
         <button
-          class="bg-white hover:bg-white text-black p-3 w-40 border-2 rounded-md font-medium"
+          class="bg-white hover:bg-white text-black px-2 py-1 w-25 md:p-3 md:w-40 md:text-base border-2 rounded-md font-medium"
         >
           <a href="#"><i class="fa-brands fa-apple"></i> Download</a>
         </button>
       </div>
     </section>
-    <section class="bg-white p-20 flex flex-col justify-center items-center">
+    <section
+      class="bg-white p-10 md:p-20 flex flex-col justify-center items-center"
+    >
       <div class="text-2xl">
         <a href="#"><i class="fa-brands fa-github gap-10"></i> </a>
         <a href="#"><i class="fa-brands fa-twitter gap-10"></i></a>
         <a href="#"><i class="fa-regular fa-envelope gap-10"></i></a>
       </div>
-      <h2 class="text-lg pt-10 text-black-80">
+      <h2 class="text-sm md-text-lg pt-10 text-black-80">
         Inspired from Dr.Angela Yu's
         <span class="font-bold text-black">tindog</span>
       </h2>
